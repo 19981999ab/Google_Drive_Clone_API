@@ -19,6 +19,18 @@ Set the path of the json in config.py file
 
 # Usage
 
+For convience there are 3 user accounts already added
+
+```
+Username>Password
+
+admin>q7w8e9a4s5d6
+
+TestUser>testing321
+
+NewUser>testing321
+```
+
 Create a superuser to have admin access
 
 > python manage.py createsuperuser
@@ -49,7 +61,7 @@ The selected file will be copied to **/media** and uploaded to filebase at usern
 
 Go to single entry view by _(enter pk of the relevant entry)_
 
-> 127.0.0.1:8000/<pk>
+> 127.0.0.1:8000/pk
 
 A delete option will appear
 
