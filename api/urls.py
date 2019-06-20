@@ -14,10 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path, include
+<<<<<<< HEAD
 from .views import *
 
 urlpatterns = [
     path("", FileUploadView.as_view()),
     path("<int:pk>/", DetailView.as_view()),
 ]
+=======
+from .views import FileUploadView
+
+urlpatterns = [path("", FileUploadView.as_view())]
+>>>>>>> c37e12077c7cf2e5a934d4397ea216a6079411f9
 urlpatterns += [path("api-auth/", include("rest_framework.urls"))]
