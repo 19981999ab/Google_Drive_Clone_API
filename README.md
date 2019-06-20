@@ -49,7 +49,7 @@ The selected file will be copied to **/media** and uploaded to filebase at usern
 
 Go to single entry view by _(enter pk of the relevant entry)_
 
-> 127.0.0.1:8000/<pk>
+> 127.0.0.1:8000/pk
 
 A delete option will appear
 
