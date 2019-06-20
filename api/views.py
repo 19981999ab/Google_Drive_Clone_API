@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 from rest_framework.parsers import FileUploadParser, MultiPartParser
-=======
-from rest_framework.parsers import FileUploadParser
->>>>>>> c37e12077c7cf2e5a934d4397ea216a6079411f9
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
@@ -10,7 +6,6 @@ from .models import File
 from .serializers import FileSerializer
 from . import firebase_Auth
 from rest_framework import permissions, viewsets
-<<<<<<< HEAD
 from django.conf import settings
 import os
 from .firebase_operations import upload_file, download_file, delete_file
@@ -59,36 +54,11 @@ class FileUploadView(APIView):
 
         return Response(file_serializer.data, status=status.HTTP_201_CREATED)
 
-=======
-from .permissions import IsOwnerorReadOnly
-
-firebase_Auth.login_firebase()
-
-
-class FileUploadView(APIView):
-    parser_class = (FileUploadParser,)
-    permission_classes = (permissions.IsAuthenticated,)
-
-    def post(self, request, *args, **kwargs):
-        request.data["owner"] = request.user.username
-
-        if request.POST.get("name", False) is False:
-            request.data["name"] = request.FILES["file"].name
-
-        file_serializer = FileSerializer(data=request.data)
-        if file_serializer.is_valid():
-            file_serializer.save()
-            return Response(file_serializer.data, status=status.HTTP_201_CREATED)
-        else:
-            return Response(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
->>>>>>> c37e12077c7cf2e5a934d4397ea216a6079411f9
     def get(self, request):
         apis = File.objects.filter(owner=request.user)
         serializer = FileSerializer(apis, many=True)
         return Response(serializer.data)
 
-<<<<<<< HEAD
 
 class DetailView(APIView):
     """Provides a detail view, showing individual records.
@@ -114,5 +84,3 @@ class DetailView(APIView):
         file_name = serializer.data["name"]
         owner = serializer.data["owner"]
         download_file(file_name, owner)
-=======
->>>>>>> c37e12077c7cf2e5a934d4397ea216a6079411f9
