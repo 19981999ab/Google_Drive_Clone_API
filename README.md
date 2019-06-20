@@ -20,7 +20,7 @@ Set the path of the json in config.py file
 # Usage
 
 For convience there are 3 user accounts already added
-
+``
 Username>Password
 
 admin>q7w8e9a4s5d6
@@ -28,7 +28,7 @@ admin>q7w8e9a4s5d6
 TestUser>testing321
 
 NewUser>testing321
-
+``
 Create a superuser to have admin access
 
 > python manage.py createsuperuser
