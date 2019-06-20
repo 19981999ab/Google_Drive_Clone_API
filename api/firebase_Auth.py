@@ -24,8 +24,8 @@ def default_login_firebase(configs):
     # TODO Fill ### with email and password of the Firebase user account where you want those data to be stored.
     """ Under Authentication tab go to sign in method and select email and password as a method to sign in, 
     create a account and fill those same details below. """
-    email = "###"
-    password = "###"
+    email = "gd@gmail.com"
+    password = "123456"
     try:
         user = auth.sign_in_with_email_and_password(email, password)
         message = "LOGIN_SUCCESSFULL"

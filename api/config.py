@@ -22,22 +22,22 @@ Example:
 """
 # TODO Fill up ### configs_upload and configs_delete using your firebase credentials
 configs_upload = {
-    "apiKey": "###",
-    "authDomain": "###",
-    "databaseURL": "###",
-    "projectId": "###",
-    "storageBucket": "###",
-    "messagingSenderId": "###",
-    "appId": "###",
+    "apiKey": "AIzaSyAaVMbSG1wJqs7o8dCk_PusI73Vuv28u1Q",
+    "authDomain": "gd-clone.firebaseapp.com",
+    "databaseURL": "https://gd-clone.firebaseio.com/",
+    "projectId": "gd-clone",
+    "storageBucket": "gd-clone.appspot.com",
+    "messagingSenderId": "471108653289",
+    "appId": "1:471108653289:web:dc3d2302252a0b86",
 }
 configs_delete = {
-    "apiKey": "###",
-    "authDomain": "###",
-    "databaseURL": "###",
-    "projectId": "###",
-    "storageBucket": "###",
-    "messagingSenderId": "###",
-    "appId": "###",
-    "serviceAccount": "###",
+    "apiKey": "AIzaSyAaVMbSG1wJqs7o8dCk_PusI73Vuv28u1Q",
+    "authDomain": "gd-clone.firebaseapp.com",
+    "databaseURL": "https://gd-clone.firebaseio.com/",
+    "projectId": "gd-clone",
+    "storageBucket": "gd-clone.appspot.com",
+    "messagingSenderId": "471108653289",
+    "appId": "1:471108653289:web:dc3d2302252a0b86",
+    "serviceAccount": "D:\\Python\\Django\\gd_api_clone\\api\\gd-clone-firebase-adminsdk-gnth9-7bd3a3934b.json",
 }
 
